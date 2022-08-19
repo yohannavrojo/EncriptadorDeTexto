@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script text="text/javascript" src="encriptado.js"></script>
+    <script src="https://kit.fontawesome.com/d6e7edc09b.js" crossorigin="anonymous"></script>
+    <title>Challenge Encriptador </title>
+</head>
+<body>
+    <main class="contenedor-inicial"> 
+        <div class="logo">
+            <img class="logoImg" src="./img/logo.png" alt="">
+            
+        </div>
+        <div class="left">
+            <h1 class="text-i">Ingrese el texto aqui</h1>
+            <input class="text-input" id="inputTexto" type="text" >
+        </div>
+        <div class="right">
+           <img  id="imgDer" src="./img/Muñeco.png" alt="imagen de diseno">
+            <h1 id="texto">Ningun mensaje fue encontrado </h1>
+            <textarea name="name" id="texto2" cols="80" rows="8">Ingrese el texto que desees encriptar o desencriptar. </textarea>
+            <button type="button" id="copiar" onclick="copy()">Copiar</button>
+        </div>
+        <div class="left-button">
+            <p><i class="fa-solid fa-circle-exclamation"></i>Solo minusculas y sin acentos</p>
+            <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+            <button type="button" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+        </div>
+    </main>
+    
+</body>
+
+</html>
